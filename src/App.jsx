@@ -5,9 +5,9 @@ import about from "./assets/about-pic.png"
 import experience from "./assets/experience.png"
 import education from "./assets/education.png"
 import checkmark from "./assets/checkmark.png"
-import project1 from "./assets/project-1.png"
-import project2 from "./assets/project-2.png"
-import project3 from "./assets/project-3.png"
+import project1 from "./assets/hedy-main.png"
+import project2 from "./assets/echoes-main.png"
+import project3 from "./assets/data-main.png"
 import email from "./assets/email.png"
 import './App.css'
 
@@ -26,8 +26,8 @@ function App() {
         <div>
           <ul className="nav-links">
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Skills</a></li>
             <li><a href="#about">About</a></li>
           </ul>
         </div>
@@ -42,8 +42,8 @@ function App() {
           </div>
           <div className="menu-links">
             <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
-            <li><a href="#experience" onClick={toggleMenu}>Experience</a></li>
             <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
+            <li><a href="#experience" onClick={toggleMenu}>Skills</a></li>
             <li><a href="#about" onClick={toggleMenu}>About</a></li>
           </div>
         </div>
@@ -105,9 +105,89 @@ function App() {
           </div>
         </div>
       </section>
+      <section id="projects">
+        <br />
+        <h1 className="title">Key Projects</h1>
+        <div className="experience-details-container">
+          <div className="about-containers">
+            <div className="details-container color-container">
+              <div className="article-container">
+                <img
+                  src={project1}
+                  alt="Project 1"
+                  className="project-img"
+                />
+              </div>
+              <h2 className="experience-sub-title project-title">Hedy</h2>
+              <div className="btn-container">
+                <button
+                  className="btn btn-color-2 project-btn"
+                  onClick={() => window.location.href = 'https://github.com/tevie-wonder/Hedy'}
+                >
+                  Github
+                </button>
+                <button
+                  className="btn btn-color-2 project-btn"
+                  onClick={() => window.location.href = 'https://hedyspace.click/'}
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div className="details-container color-container">
+              <div className="article-container">
+                <img
+                  src={project2}
+                  alt="Project 2"
+                  className="project-img"
+                />
+              </div>
+              <h2 className="experience-sub-title project-title">Echoes 66</h2>
+              <div className="btn-container">
+                <button
+                  className="btn btn-color-2 project-btn"
+                  onClick={() => window.location.href = 'https://github.com/tevie-wonder/Echoes'}
+                >
+                  Github
+                </button>
+                <button
+                  className="btn btn-color-2 project-btn"
+                  onClick={() => window.location.href = 'https://echoes66.click'}
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div className="details-container color-container">
+              <div className="article-container">
+                <img
+                  src={project3}
+                  alt="Project 3"
+                  className="project-img"
+                />
+              </div>
+              <h2 className="experience-sub-title project-title">Admin Data Dashboard</h2>
+              <div className="btn-container">
+                <button
+                  className="btn btn-color-2 project-btn"
+                  onClick={() => window.location.href = 'https://github.com/tevie-wonder/Dashboard'}
+                >
+                  Github
+                </button>
+                <button
+                  className="btn btn-color-2 project-btn"
+                  onClick={() => window.location.href = 'https://admindashboard.click'}
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="experience">
         <br />
-        <h1 className="title">Experience</h1>
+        <h1 className="title">Skills</h1>
         <div className="experience-details-container">
           <div className="about-containers">
             <div className="details-container">
@@ -228,86 +308,6 @@ function App() {
                     <p>Intermediate</p>
                   </div>
                 </article>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="projects">
-        <br />
-        <h1 className="title">Key Projects</h1>
-        <div className="experience-details-container">
-          <div className="about-containers">
-            <div className="details-container color-container">
-              <div className="article-container">
-                <img
-                  src={project1}
-                  alt="Project 1"
-                  className="project-img"
-                />
-              </div>
-              <h2 className="experience-sub-title project-title">Project One</h2>
-              <div className="btn-container">
-                <button
-                  className="btn btn-color-2 project-btn"
-                  onClick={() => window.location.href = 'https://github.com/'}
-                >
-                  Github
-                </button>
-                <button
-                  className="btn btn-color-2 project-btn"
-                  onClick={() => window.location.href = 'https://github.com/'}
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div>
-            <div className="details-container color-container">
-              <div className="article-container">
-                <img
-                  src={project2}
-                  alt="Project 2"
-                  className="project-img"
-                />
-              </div>
-              <h2 className="experience-sub-title project-title">Project Two</h2>
-              <div className="btn-container">
-                <button
-                  className="btn btn-color-2 project-btn"
-                  onClick={() => window.location.href = 'https://github.com/'}
-                >
-                  Github
-                </button>
-                <button
-                  className="btn btn-color-2 project-btn"
-                  onClick={() => window.location.href = 'https://github.com/'}
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div>
-            <div className="details-container color-container">
-              <div className="article-container">
-                <img
-                  src={project3}
-                  alt="Project 3"
-                  className="project-img"
-                />
-              </div>
-              <h2 className="experience-sub-title project-title">Project Three</h2>
-              <div className="btn-container">
-                <button
-                  className="btn btn-color-2 project-btn"
-                  onClick={() => window.location.href = 'https://github.com/'}
-                >
-                  Github
-                </button>
-                <button
-                  className="btn btn-color-2 project-btn"
-                  onClick={() => window.location.href = 'https://github.com/'}
-                >
-                  Live Demo
-                </button>
               </div>
             </div>
           </div>
